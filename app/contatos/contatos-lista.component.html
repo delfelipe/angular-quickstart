@@ -1,0 +1,47 @@
+<div class="container">
+	
+	<div class="row">
+		
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+			
+			<h2>Meus Contatos</h2>
+
+			<a class="btn btn-success" routerLink="/contato/save">Novo</a>
+
+			<table class="table table-striped table-hover">
+				
+				<thead>
+					
+					<tr>
+						
+						<th>Nome</th>
+						<th>E-mail</th>
+						<th>Telefone</th>
+						<th>Deletar</th>
+
+					</tr>
+
+				</thead>
+
+				<tbody>
+					
+					<tr *ngFor="let c of contatos" [routerLink]="['/contato/save', c.id]">
+						
+						<td>{{ c.nome }}</td>
+						<td>{{ c.email }}</td>
+						<td>{{ c.telefone }}</td>
+						<td>
+							<button class="btn btn-danger">Deletar</button>
+						</td>
+
+					</tr>
+
+				</tbody>				
+
+			</table>
+
+		</div>
+
+	</div><!-- /.row -->
+
+</div><!-- /.container -->
