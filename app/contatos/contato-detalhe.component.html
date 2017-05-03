@@ -32,7 +32,7 @@
 		</div><!-- /.form-group -->
 
 		<button type="submit" class="btn btn-success" [disabled]="!contatoForm.form.valid">Salvar</button>
-		<a class="btn btn-secondary" routerLink="/">Voltar</a>
+		<a class="btn btn-secondary" (click)="goBack()">Voltar</a>
 
 	</form>
 
