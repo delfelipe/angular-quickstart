@@ -9,6 +9,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var common_1 = require("@angular/common");
 var forms_1 = require("@angular/forms");
+var contato_busca_component_1 = require("./contato-busca.component");
 var contatos_lista_component_1 = require("./contatos-lista.component");
 var contato_detalhe_component_1 = require("./contato-detalhe.component");
 var contato_routing_module_1 = require("./contato-routing.module");
@@ -26,10 +27,12 @@ ContatosModule = __decorate([
             forms_1.FormsModule
         ],
         declarations: [
+            contato_busca_component_1.ContatoBuscaComponent,
             contatos_lista_component_1.ContatosListaComponent,
             contato_detalhe_component_1.ContatosDetalheComponent
         ],
         exports: [
+            contato_busca_component_1.ContatoBuscaComponent,
             contatos_lista_component_1.ContatosListaComponent
         ],
         providers: [
